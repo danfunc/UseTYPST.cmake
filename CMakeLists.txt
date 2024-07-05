@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(UseTYPST)
+include(UseTYPST.cmake)
+add_typst_document(example example.typ)
+add_subdirectory(subdir)
