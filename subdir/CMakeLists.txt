@@ -1,0 +1,1 @@
+add_typst_document(subdir_example subdir_example.typ)

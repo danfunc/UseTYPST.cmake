@@ -1,0 +1,5 @@
+project(sample_project CXX)
+set(USETYPST_DEFAULT_ALL_TARGET ON)
+include(UseTYPST.cmake)
+add_executable(sample_executable main.cpp)
+add_typst_document(sample_document doc.typ)
