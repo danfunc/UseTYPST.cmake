@@ -1,12 +1,14 @@
-# What is UseTYPST.cmake?
-UseTYPST.cmake is cmake extension to use typst  like UseLATEX.cmake.
-# How to use?
+# UseTYPST.cmake
 
+This CMake module provides functions to integrate Typst document compilation into your CMake build process.
 
-You should include UseTYPST.cmake!!!
+## Functions
 
+### `add_typst_document`
 
-You can make pdf document from typst files with only one command like add_executable(). You use add_typst_document(${DOCUMENT_NAME} ${ROOT_typst_file}) to make it. If you want to add extra typst file, you can use typst_document_sources(${DOCUMENT_NAME} ${ADDITIONAL_FILES} ...) to make a document to detect changed ADDITIONAL_FILES then build.
-./CMakeLists.txt, ./example.typ, ./subdir/CMakeLists.txt, and ./subdir/subdir_example.typ is to make example document. Read them!
+This function adds a custom target to compile a Typst document into a PDF.
 
-Enjoy typst with cmake!
+#### Usage
+
+```cmake
+add_typst_document(DOC_NAME ROOT_TYP_DOCUMENT)
