@@ -1,1 +1,0 @@
-typst_document_sources(example subdir_example.typ)
